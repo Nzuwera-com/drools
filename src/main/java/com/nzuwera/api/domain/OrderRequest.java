@@ -37,4 +37,14 @@ public class OrderRequest {
     public void setTotalPrice(Integer totalPrice) {
         this.totalPrice = totalPrice;
     }
+
+    @Override
+    public String toString() {
+        return "OrderRequest{" +
+                "orderId=" + orderId +
+                ", paymentType='" + paymentType + '\'' +
+                ", totalPrice=" + totalPrice +
+                ", discount=" + discount +
+                '}';
+    }
 }
