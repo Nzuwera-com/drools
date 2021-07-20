@@ -9,8 +9,8 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.nzuwera</groupId>
-    <artifactId>api</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <artifactId>drools</artifactId>
+    <version>0.0.1</version>
     <name>api</name>
     <description>spring boot API demo</description>
     <properties>
@@ -21,6 +21,21 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <!-- Lombok plugin -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.2.5</version>
+            <!--<scope>runtime</scope>-->
         </dependency>
         <!-- Drools -->
         <dependency>
@@ -39,6 +54,12 @@
             <version>${drools.version}</version>
         </dependency>
         <!-- Test-->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>1.4.200</version>
+            <scope>compile</scope>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
