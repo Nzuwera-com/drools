@@ -60,6 +60,6 @@ jobs:
         run: mvn -B verify -P coverage --no-transfer-progress
 
       - uses: codecov/codecov-action@v1
-       with:
+        with:
          file: ./**/target/site/jacoco/jacoco.xml
          name: codecov
