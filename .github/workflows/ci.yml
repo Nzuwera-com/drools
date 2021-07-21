@@ -58,6 +58,8 @@ jobs:
           distribution: 'adopt'
       - name: Generate test coverage
         run: mvn -B verify --file pom.xml
+      - name: generate test coverage
+        uses:
         with:
           token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
           files: ./target/site/jacoco/jacoco.xml # optional
