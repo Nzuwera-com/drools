@@ -42,6 +42,7 @@ jobs:
         distribution: 'adopt'
     - name: Run tests
       run: mvn -B test --file pom.xml
+
   SonarCloud:
     - name: Cache SonarCloud packages
       uses: actions/cache@v1
